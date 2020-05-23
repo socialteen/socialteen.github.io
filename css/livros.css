@@ -1,0 +1,160 @@
+/* ALTERAÇÃO GERAL */
+    @media only screen and (min-width: 993px) {
+      .container {
+        width: 95%;
+      }
+    }
+    main {
+      flex: 1 0 auto;
+      }
+    footer {
+      background-image: url(../img/div.png);
+      background-repeat: repeat-x;
+    }
+/* ALTERAÇÕES NO MENU */
+
+    nav.nav-extended .nav-wrapper {
+      min-height: 50px;
+    }
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      line-height: 65px;
+    }
+/* ESTILOS ADICIONAIS */
+
+    a {
+      text-decoration: none;
+      position: relative;
+      padding: 0 0 5px 0;
+    }
+
+    .efeito a:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+      background-color: #9c27b0;
+      -webkit-transition: all .1s ease;
+      transition: all 0.3s ease;  
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+
+    .efeito a:hover:after {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    nav a {
+        font-weight: bold;
+    }
+    .efeito a.isoled:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+      background-color: transparent;
+      -webkit-transition: all .1s ease;
+      transition: all 0.3s ease;  
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+    a.modificado{
+      opacity: 0.7
+    }
+    a.modificado:hover{
+      opacity: 1
+    }
+
+     a{
+      z-index: 11;
+    }
+    .menuDesk{
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+      tr td a{
+    border-bottom: #00bfa5 solid 1px;
+    color: purple;
+  }
+  a{
+    color: purple;
+  }
+/* PLUGIN JSSOCIALS */
+
+    .jssocials-share-link {
+        font-size: 20px;
+        border-radius: 50%;
+    }
+    a.jssocials-share-link:after {
+        background-color: transparent;
+    }
+    .jssocials-share-twitter .jssocials-share-link, .jssocials-share-facebook .jssocials-share-link, .jssocials-share-googleplus .jssocials-share-link, .jssocials-share-pinterest .jssocials-share-link {
+        background: #f9a825;
+    }
+    .jssocials-share-link {
+        color: black;
+    }
+    .jssocials-share-twitter .jssocials-share-link:hover, .jssocials-share-facebook .jssocials-share-link:hover, .jssocials-share-googleplus .jssocials-share-link:hover, .jssocials-share-pinterest .jssocials-share-link:hover {
+        background: black;
+    }
+
+/* LIVROS */
+  @font-face {
+    font-family: Font;
+    src: url("../fonts/roboto/Roboto-Bold.woff") format('TrueType');
+  }
+
+  .menu a{
+    color: #fff;
+  }
+
+  h1 {
+    font-family: 'Font', cursive;
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 570px) {
+    h1 {
+      font-size: 30px;
+    }
+    .menu{
+      display: none;
+    }
+    figure.effect-ruby h2{
+      margin-top:-10%;
+    }
+    .effect-ruby p{
+      display:none;
+    }
+    
+    
+  }
+ 
+  .bx-wrapper .bx-controls-direction a {z-index: 1;}
+  #lancamentos img{border: 3px solid #3f51b5;} 
+  #conteudo{padding-top: 3.85em;}
+  #conteudo img{width: 20em;}
+
+
+  /* seleção */
+    ::selection {
+      background:#f094b7;
+      color:#555;
+    }
+    ::-moz-selection {
+      background:#f094b7;
+      color:#555;
+    }
+    ::-webkit-selection {
+      background:#f094b7;
+      color:#555;
+    }

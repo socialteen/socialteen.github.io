@@ -1,0 +1,299 @@
+/* ALTERAÇÃO GERAL */
+    @media only screen and (min-width: 993px) {
+      .container {
+        width: 95%;
+      }
+    }
+    main {
+      flex: 1 0 auto;
+      }
+    footer {
+      background-image: url(../img/div.png);
+      background-repeat: repeat-x;
+    }
+/* ALTERAÇÕES NO MENU */
+
+    nav.nav-extended .nav-wrapper {
+      min-height: 50px;
+    }
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      line-height: 65px;
+    }
+/* ALTERAÇÕES INDEX */
+img.modeloindex {
+  height: 200px;
+}
+img.modeloindex1 {
+  height: 300px;
+}
+/* ESTILOS ADICIONAIS */
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      padding: 0 0 5px 0;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+      background-color: #9c27b0;
+      -webkit-transition: all .1s ease;
+      transition: all 0.3s ease;  
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+
+    a:hover:after {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    nav a {
+        font-weight: bold;
+    }
+    a.isoled:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+      background-color: transparent;
+      -webkit-transition: all .1s ease;
+      transition: all 0.3s ease;  
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+    }
+    a.modificado{
+      opacity: 0.7
+    }
+    a.modificado:hover{
+      opacity: 1
+    }
+/* ALTERAÇÕES P/ PAGINA FAMOSOS (DUDA)*/
+
+    img.modelo2 { /* PARA IMAGENS SECUNDÁRIAS (NOTICIAS SECUNDÁRIAS))*/
+        height: 250px;
+        border: 10px solid white;
+    }
+    img.modelo1 { /* PARA IMAGENS PRINCIPAIS (NOTICIA PRINCIPAL)*/
+        height: 335px;
+    }
+    span.modelo1 { /* DIMINUIU A FONTE, E ADICIONOU BORDA COM TRAÇINHOS LARANJAS */
+        font-size: 18px !important;
+        border-bottom: 2px dashed orange;
+        border-top: 2px dashed orange;
+    }
+    div.modelo1{ /* AS BORDAS DAS NOTICIAS SECUNDÁRIAS */
+        border: 1px solid #9c27b0;
+    }
+    div.modelo1:hover{ /* PASSA O MOUSE FICA LARANJA */
+        border: 1px solid orange !important;
+    }
+    blockquote{ /* BORDA ROXA DAS FRASES DE FAMOSOS */
+        border-left: 5px solid #9c27b0;
+    }
+/* PLUGIN JSSOCIALS */
+
+    .jssocials-share-link {
+        font-size: 20px;
+        border-radius: 50%;
+    }
+    a.jssocials-share-link:after {
+        background-color: transparent;
+    }
+    .jssocials-share-twitter .jssocials-share-link, .jssocials-share-facebook .jssocials-share-link, .jssocials-share-googleplus .jssocials-share-link, .jssocials-share-pinterest .jssocials-share-link {
+        background: #f9a825;
+    }
+    .jssocials-share-link {
+        color: black;
+    }
+    .jssocials-share-twitter .jssocials-share-link:hover, .jssocials-share-facebook .jssocials-share-link:hover, .jssocials-share-googleplus .jssocials-share-link:hover, .jssocials-share-pinterest .jssocials-share-link:hover {
+        background: black;
+    }
+/* PLUGIN LORY (SLIDER) */
+    .slidera {
+        position: relative;
+        height: 100px;
+        width: 100%;
+    }
+
+    .frame {
+        /**
+         * (optional) wrapper width, specifies width of the slider frame.
+         */
+        width: 250px;
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .slides {
+        display: inline-block;
+    }
+
+    li.duda {
+        position: relative;
+        display: inline-block;
+
+        /**
+         * (optional) if the content inside the slide element has a defined size.
+         */
+        width: 880px;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next svg, .prev svg {
+        width: 25px;
+    }
+
+    /*Johnny*/
+    .top, .nometop{
+      color: #9c27b0;
+      text-shadow: 2px 3px #ffc107 ;
+    }
+    .menuDesk{
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+      tr td a{
+    border-bottom: #00bfa5 solid 1px;
+    color: purple;
+  }
+  a{
+    color: purple;
+  }
+  /*Musicas*/
+  .titulo{
+    font-size: 20px;
+  }
+  .titulo2{
+    font-size: 20px;
+  }
+   @font-face {
+    font-family: Font;
+    src: url("../fonts/roboto/Roboto-Bold.woff") format('TrueType');
+  }
+
+  .menu a{
+    color: #fff;
+  }
+
+  h1 {
+    font-family: 'Font', cursive;
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 570px) {
+    h1 {
+      font-size: 30px;
+    }
+    .menu{
+      display: none;
+    }
+    figure.effect-ruby h2{
+      margin-top:-10%;
+    }
+    .effect-ruby p{
+      display:none;
+    }
+    
+    
+  }
+ 
+  .bx-wrapper .bx-controls-direction a {z-index: 1;}
+  #lancamentos img{border: 3px solid #3f51b5;} 
+  #conteudo{padding-top: 3.85em;}
+  #conteudo img{width: 20em;}
+
+
+  /* seleção */
+    ::selection {
+      background:#f094b7;
+      color:#555;
+    }
+    ::-moz-selection {
+      background:#f094b7;
+      color:#555;
+    }
+    ::-webkit-selection {
+      background:#f094b7;
+      color:#555;
+    }
+     
+    div.fundo{
+        background-image: url(../img/curiosidades/fundo.png);
+    }
+    a.modelo3:hover{
+        transition: all 0.5s;
+        color: white !important;
+        text-shadow: 1px 1px grey;
+    }
+    a.modelo3-3{
+        font-size: 28px;
+    }
+    a.modelo3-3:hover{
+        transition: all 0.3s;
+        text-shadow: 1px 1px #ab47bc;
+    }
+    img.modelo3 {
+        height: 250px;
+        border: 10px solid #424242;
+    }
+    img.modelo3-3 {
+        height: 180px;
+        border: 10px solid #424242;
+    }
+    img.modelo3:hover {
+        transition: all 0.5s;
+        border: 10px solid #9c27b0 !important;
+    }
+/* PLUGIN JSSOCIALS */
+
+    .jssocials-share-link {
+        font-size: 20px;
+        border-radius: 50%;
+    }
+    a.jssocials-share-link:after {
+        background-color: transparent;
+    }
+    .jssocials-share-twitter .jssocials-share-link, .jssocials-share-facebook .jssocials-share-link, .jssocials-share-googleplus .jssocials-share-link, .jssocials-share-pinterest .jssocials-share-link {
+        background: #f9a825;
+    }
+    .jssocials-share-link {
+        color: black;
+    }
+    .jssocials-share-twitter .jssocials-share-link:hover, .jssocials-share-facebook .jssocials-share-link:hover, .jssocials-share-googleplus .jssocials-share-link:hover, .jssocials-share-pinterest .jssocials-share-link:hover {
+        background: black;
+    }
+    .nav-dots {
+        z-index: 1;
+    }

@@ -111,8 +111,15 @@
 .sl-slide-vertical .sl-slide-inner {
 	background: #ccc;
 }
-
-td input.filtro-nome{
-	position: absolute !important;
-	top: 25px !important;
+@media only screen and (min-width: 900px) {
+	td input.filtro-nome{
+		position: absolute !important;
+		top: 25px !important;
+	}
+}
+@media only screen and (max-width: 900px) {
+	td input.filtro-nome{
+		position: absolute !important;
+		top: 0px !important;
+	}
 }

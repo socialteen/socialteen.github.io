@@ -1,2 +1,0 @@
-# socialteen.github.io
-Projeto
